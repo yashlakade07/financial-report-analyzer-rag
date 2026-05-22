@@ -44,7 +44,7 @@ A Retrieval-Augmented Generation (RAG) system built to ingest, process, and anal
    git clone [https://github.com/YOUR_USERNAME/financial-report-analyzer.git](https://github.com/YOUR_USERNAME/financial-report-analyzer.git)
    cd financial-report-analyzer
 
-```
+   ```
 
 2. **Pull the required models via Ollama:**
 ```bash
@@ -88,4 +88,4 @@ Once a document is processed, try asking complex extraction questions:
 * *"How much money was credited via NEFT on July 10th, 2019, and what was the source bank?"*
 * *"Summarize the primary risk factors mentioned in this document."*
 
-```
+
