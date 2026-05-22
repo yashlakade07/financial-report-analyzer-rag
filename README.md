@@ -41,7 +41,7 @@ A Retrieval-Augmented Generation (RAG) system built to ingest, process, and anal
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/financial-report-analyzer.git](https://github.com/YOUR_USERNAME/financial-report-analyzer.git)
+   git clone [https://github.com/yashlakade07/financial-report-analyzer-rag.git](https://github.com/yashlakade07/financial-report-analyzer-rag.git)
    cd financial-report-analyzer
 
    ```
@@ -88,4 +88,19 @@ Once a document is processed, try asking complex extraction questions:
 * *"How much money was credited via NEFT on July 10th, 2019, and what was the source bank?"*
 * *"Summarize the primary risk factors mentioned in this document."*
 
-
+financial-report-analyzer/
+├── app/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── rag.py
+│   └── schemas.py
+├── frontend/
+│   ├── app.py           
+│   ├── requirements.txt 
+│   └── Dockerfile       
+├── tests/
+│   ├── __init__.py
+│   └── test_main.py
+├── Dockerfile
+├── docker-compose.yml
+└── requirements.txt
