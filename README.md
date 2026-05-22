@@ -1,9 +1,9 @@
 ```markdown
-# Financial Report RAG Analyzer 📊
+#Financial Report RAG Analyzer 📊
 
 A Retrieval-Augmented Generation (RAG) system built to ingest, process, and analyze multi-page financial documents (like SEC 10-K reports or bank statements). This project leverages a 100% local, privacy-first AI stack to convert PDFs into vector embeddings and accurately answer complex financial queries.
 
-## 🌟 Key Features
+##🌟 Key Features
 * **Privacy-First Processing:** All data processing and LLM inference happen locally. Documents never leave your machine.
 * **Vector Search:** Uses **FAISS** (Facebook AI Similarity Search) for blazingly fast in-memory context retrieval.
 * **Intelligent Chunking:** Implements LangChain's `RecursiveCharacterTextSplitter` to optimally segment dense financial data.
@@ -12,7 +12,7 @@ A Retrieval-Augmented Generation (RAG) system built to ingest, process, and anal
 
 ---
 
-## 🏗️ Architecture
+##🏗️ Architecture
 1.  **Ingestion:** `PyPDFLoader` extracts text from uploaded documents.
 2.  **Embedding:** `nomic-embed-text` converts text chunks into vector representations.
 3.  **Storage:** Vectors are stored in a local **FAISS** database.
@@ -20,7 +20,7 @@ A Retrieval-Augmented Generation (RAG) system built to ingest, process, and anal
 
 ---
 
-## 🛠️ Technical Stack
+##🛠️ Technical Stack
 * **Orchestration:** LangChain
 * **Generative Model:** Qwen 2.5:7b (via Ollama)
 * **Embedding Model:** Nomic-Embed-Text (via Ollama)
@@ -32,13 +32,13 @@ A Retrieval-Augmented Generation (RAG) system built to ingest, process, and anal
 
 ---
 
-## 🚀 Getting Started
+##🚀 Getting Started
 
-### Prerequisites
+###Prerequisites
 * [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running.
 * [Ollama](https://ollama.com/) installed and running on your host machine.
 
-### Installation & Setup
+###Installation & Setup
 
 1. **Clone the repository:**
    ```bash
