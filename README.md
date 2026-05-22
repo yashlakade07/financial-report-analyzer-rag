@@ -12,10 +12,10 @@ A Retrieval-Augmented Generation (RAG) system built to ingest, process, and anal
 ---
 
 ## 🏗️ Architecture
-1. **Ingestion:** `PyPDFLoader` extracts text from uploaded documents.
-2. **Embedding:** `nomic-embed-text` converts text chunks into vector representations.
-3. **Storage:** Vectors are stored in a local **FAISS** database.
-4. **Retrieval & Generation:** User queries are embedded, matched against the FAISS database, and passed to **Qwen 2.5:7b** via an orchestration chain to generate a grounded response.
+1.  **Ingestion:** `PyPDFLoader` extracts text from uploaded documents.
+2.  **Embedding:** `nomic-embed-text` converts text chunks into vector representations.
+3.  **Storage:** Vectors are stored in a local **FAISS** database.
+4.  **Retrieval & Generation:** User queries are embedded, matched against the FAISS database, and passed to **Qwen 2.5:7b** via an orchestration chain to generate a grounded response.
 
 ---
 
@@ -43,3 +43,49 @@ A Retrieval-Augmented Generation (RAG) system built to ingest, process, and anal
    ```bash
    git clone [https://github.com/YOUR_USERNAME/financial-report-analyzer.git](https://github.com/YOUR_USERNAME/financial-report-analyzer.git)
    cd financial-report-analyzer
+
+```
+
+2. **Pull the required models via Ollama:**
+```bash
+ollama pull qwen2.5:7b
+ollama pull nomic-embed-text
+
+```
+
+
+3. **Build and launch the application:**
+```bash
+docker-compose up --build
+
+```
+
+
+4. **Access the Interface:**
+* **Frontend UI:** [http://localhost:8501](https://www.google.com/search?q=http://localhost:8501)
+* **API Documentation:** [http://localhost:8000/docs](https://www.google.com/search?q=http://localhost:8000/docs)
+
+
+
+---
+
+## 🧪 Running Tests
+
+To verify the backend API endpoints and RAG logic, run the test suite:
+
+```bash
+pytest tests/test_main.py -v
+
+```
+
+---
+
+## 💡 Example Queries
+
+Once a document is processed, try asking complex extraction questions:
+
+* *"What was the single largest withdrawal made during this statement period, and who was the recipient?"*
+* *"How much money was credited via NEFT on July 10th, 2019, and what was the source bank?"*
+* *"Summarize the primary risk factors mentioned in this document."*
+
+```
