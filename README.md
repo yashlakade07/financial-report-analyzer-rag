@@ -87,7 +87,10 @@ Once a document is processed, try asking complex extraction questions:
 * *"What was the single largest withdrawal made during this statement period, and who was the recipient?"*
 * *"How much money was credited via NEFT on July 10th, 2019, and what was the source bank?"*
 * *"Summarize the primary risk factors mentioned in this document."*
-  
+
+<img width="1536" height="1024" alt="workflow" src="https://github.com/user-attachments/assets/7872d857-2d04-4b34-8e57-c43df6617f70" />
+
+
 ## 📂 Project Structure
 
 ```bash
