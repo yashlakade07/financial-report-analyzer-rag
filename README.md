@@ -87,7 +87,10 @@ Once a document is processed, try asking complex extraction questions:
 * *"What was the single largest withdrawal made during this statement period, and who was the recipient?"*
 * *"How much money was credited via NEFT on July 10th, 2019, and what was the source bank?"*
 * *"Summarize the primary risk factors mentioned in this document."*
+  
+## 📂 Project Structure
 
+```bash
 financial-report-analyzer/
 ├── app/
 │   ├── __init__.py
